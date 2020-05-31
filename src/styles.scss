@@ -1,0 +1,30 @@
+body {
+  font-family: 'source sans pro', sans-serif;
+}
+
+#portfolio-list{
+@media only screen and (max-width: 767px) {
+  column-count: 2;
+}
+@media only screen and (min-width: 760px) {
+  column-count: 4;
+}
+  
+  .portfolio-entry{
+    box-shadow:0 0 5px gray;
+    text-align: center;
+    background: #f1f1f1;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    page-break-inside: avoid;
+    break-inside:avoid;
+
+  }
+
+  img{
+    width: 100%;
+  }
+}
